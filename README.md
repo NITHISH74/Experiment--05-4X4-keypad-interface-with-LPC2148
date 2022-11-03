@@ -75,59 +75,62 @@ Select the device database. Default is Software Packs. You can have various loca
 6.	Build all for the hex code in the output of the target
 For creating the simulation environment in Proteus suite 
 ## Starting New Design:
-Step 1: 
+#### Step 1: 
 Open ISIS software and select New design in  File menu.
-### Figure -02 Proteus File Menu
+#### Figure -02 Proteus File Menu
 
  ![image](https://user-images.githubusercontent.com/36288975/198944893-b936195d-2850-4543-b255-f4d2f8147e4d.png)
- Step 2: 
+ 
+#### Step 2: 
  A dialogue box appears to save the current design. However, we are creating a new design file so you can click Yes or No depending on the content of the present file. Then a Pop-Up appears asking to select the template. It is similar to selecting the paper size while printing. For now select default or according to the layout size of the circuit.
-### Figure -03 Proteus Default Template Select
-
+#### Figure -03 Proteus Default Template Select
  ![image](https://user-images.githubusercontent.com/36288975/198944918-be6a0e5d-e52b-4cff-beb2-0b9f7cabe175.png)
-Step 3:
-An untitled design sheet will be opened, save it according to your wish,it is better to create a new folder for every layout as it generates other files supporting your design. However,it is not mandatory.
-### Figure -04 Proteus Design Sheet
- ![image](https://user-images.githubusercontent.com/36288975/198944933-084a499d-efc3-43ef-ac86-08c7ba3fbf99.png)
+ 
+#### Step 3:
+An untitled design sheet will be opened, save it according to your wish,it is better to create a new folder for every layout as it generates other files supporting
+your design. However,it is not mandatory.
+#### Figure -04 Proteus Design Sheet
+![image](https://user-images.githubusercontent.com/36288975/198944933-084a499d-efc3-43ef-ac86-08c7ba3fbf99.png)
 
-Step 4:
+#### Step 4:
 To Select components, Click on the component mode button.
-### Figure -05 Component Mode
-
- ![image](https://user-images.githubusercontent.com/36288975/198944943-d240ac7b-287a-4a64-9be2-2c2344e9f5cd.png)
+#### Figure -05 Component Mode
+![image](https://user-images.githubusercontent.com/36288975/198944943-d240ac7b-287a-4a64-9be2-2c2344e9f5cd.png)
   
-Step 5:
+#### Step 5:
 Click On Pick from Libraries. It shows the categories of components available and a search option to enter the part name.
- ### Figure -06 Pick from Libraries
+#### Figure -06 Pick from Libraries
  ![image](https://user-images.githubusercontent.com/36288975/198944962-b752aa86-f4e7-47fe-8cca-434d65eb6462.png)
-Step 6:
+ 
+#### Step 6:
 Select the components from categories or type the part name in Keywords text box.
- Place all the required components and route the wires i.e, make connections.
+Place all the required components and route the wires i.e, make connections.
 Either selection mode above the component mode or component mode allows to connect through wires. Left click from one terminal to other to make connection. Double right-click on the connected wire or the component to remove connection or the component respectively.
-### Figure -07 Component Properties Selection
+#### Figure -07 Component Properties Selection
  ![image](https://user-images.githubusercontent.com/36288975/198944983-d2b555d8-6094-431a-ab95-12f693137b9f.png)
 Double click on the component to edit the properties of the components and click on Ok.
-Step 8: 
-Select ARM microcontroller form the library – pick part 
-### Figure -08 LPC2138/48 selection
- ![image](https://user-images.githubusercontent.com/36288975/198944993-d9480186-2d50-405f-9d81-c425944445c3.png)
-Step 7:
 
+#### Step 7: 
+Select ARM microcontroller form the library – pick part 
+#### Figure -08 LPC2138/48 selection
+ ![image](https://user-images.githubusercontent.com/36288975/198944993-d9480186-2d50-405f-9d81-c425944445c3.png)
+ 
+#### Step 8:
 After making necessary connections click on debug from 
 Example shows selection of push button. Select the components accordingly.
-###  Figure -09 Push Button Selection
+####  Figure -09 Push Button Selection
 
  ![image](https://user-images.githubusercontent.com/36288975/198945018-ddc37b08-f4b0-4a99-99cc-378202d3735e.png)
 
-Step 8: The selected components will appear in the devices list. Select the component and place it in the design sheet by left-click., post which select all the associated components as shown in the circuit diagram below.
-### Figure -10 Circuit diagram of4X4 keypad and  16x2 LCD interface with LPC2148/38
-
+#### Step 9:
+The selected components will appear in the devices list. Select the component and place it in the design sheet by left-click., post which select all the associated components as shown in the circuit diagram below.
+#### Figure -10 Circuit diagram of4X4 keypad and  16x2 LCD interface with LPC2148/38
 ![image](https://user-images.githubusercontent.com/36288975/198945047-9ef54f44-c4df-46f1-970a-f168330a7048.png)
-### Figure -11 Hex file for simulation 
-
+#### Figure -11 Hex file for simulation 
 ![image](https://user-images.githubusercontent.com/36288975/198945057-7c3a4172-e4d6-4797-9c75-f4f5d0de2797.png)
 
-Step 9: Select the hex file from the Kiel program folder and import the program in to the microcontroller as shown in figure 11 ,  debug and if no errors in connections are found, run the VSM simulation to view the output.
+#### Step 10: 
+Select the hex file from the Kiel program folder and import the program in to the microcontroller as shown in figure 11 ,  debug and if no errors in connections are found, run the VSM simulation to view the output.
 
 ## Kiel - Program:
 ```
@@ -285,10 +288,3 @@ void LCD_init()
 
 ## Result :
 Interfacing a keypad 4x4 is interfaced  with LPC2148.
-
-
-
-
-
-
-
