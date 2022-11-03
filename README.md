@@ -40,25 +40,28 @@ The main features of LPC2148 include the following.
 
 ## 4x4 keypad:
 
- ![image](https://user-images.githubusercontent.com/36288975/198944736-c16e2134-193e-4810-a21e-1256c6eefc2d.png)
+![image](https://user-images.githubusercontent.com/36288975/198944736-c16e2134-193e-4810-a21e-1256c6eefc2d.png)
 
 ![image](https://user-images.githubusercontent.com/36288975/198944763-4db22ff4-63df-438a-a27e-9b90aed8eaf0.png)
 
- ![image](https://user-images.githubusercontent.com/36288975/198944803-b9298867-c5f1-4167-98f8-f17a6bab5ffe.png)
+![image](https://user-images.githubusercontent.com/36288975/198944803-b9298867-c5f1-4167-98f8-f17a6bab5ffe.png)
 
 
 #### STEP1: 
 First set all ROWS to OUTPUT and set them at +5V. Next set all COLUMNS as INPUT to sense the HIGH logic. Now consider a button is pressed on keypad. And that key is at 2ND COLUMN and 3rd ROW.
  
-•	With the button being pressed the current flows as shown in figure. With that a voltage of +5V appears at terminal C2. Since the COLUMN pins are set as INPUTS, the controller can sense C2 going high. The controller can be programmed to remember that C2 going high and the button pressed is in C2 COLUMN.
+With the button being pressed the current flows as shown in figure. With that a voltage of +5V appears at terminal C2. Since the COLUMN pins are set as INPUTS, the controller can sense C2 going high. The controller can be programmed to remember that C2 going high and the button pressed is in C2 COLUMN.
  
 #### STEP2: 
 Next set all COLUMNS to OUTPUT and set them at +5V. Next set all ROWS as INPUT to sense the HIGH logic. Since the key pressed is at 2ND COLUMN and 3rd ROW. The current flows as shown below.
 ![image](https://user-images.githubusercontent.com/36288975/198944818-632726a7-c582-45b5-9ea0-97d2d0b07939.png)
+
+
 With that current flow a positive voltage of +5V appears at R3 pin. Since all ROWS are set as INPUTS, the controller can sense +5V at R3 pin. The controller can be programmed to remember the key being pressed at third ROW of KEYPAD MATRIX.
 ![image](https://user-images.githubusercontent.com/36288975/198944848-bc93731c-dc7d-4e33-b32e-14d4c84c5a0b.png)
 
-•	From previous step, we have known the COLUMN number of key pressed and now we know ROW number. With that we can match the key being pressed. We can take the key INPUT provided by this way for 4X4.
+
+From previous step, we have known the COLUMN number of key pressed and now we know ROW number. With that we can match the key being pressed. We can take the key INPUT provided by this way for 4X4.
 
 ## Procedure:
 For creation of project on    Kiel μ vision 5 Development environment (LPC21 XX/48/38)
@@ -66,7 +69,7 @@ For creation of project on    Kiel μ vision 5 Development environment (LPC21 XX
 2.	Next, the dialog Select Device for Target opens.
 #### Figure -01 Target selection.
  ![image](https://user-images.githubusercontent.com/36288975/198944870-21526748-6345-436d-89c5-07b3902775b0.png)
-Select the device database. Default is Software Packs. You can have various local device databases, which show up in the drop-down box. For legacy devices (Arm7, Arm9), use the Legacy Device Database [no RTE]
+Select the device database. Default is Software Packs. You can have various local device databases, which show up in the drop-down box. For legacy devices (Arm7, Arm9), use the Legacy Device Database.
 3.	Select the device for your application. This selection defines essential tool settings such as compiler controls, the memory layout for the linker, and the Flash programming algorithms.
 4.	Click OK.
 5.	Click on the new file option and save the file using save option with .C extension 
