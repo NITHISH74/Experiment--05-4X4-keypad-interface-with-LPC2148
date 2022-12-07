@@ -14,6 +14,7 @@ LPC2148 Microcontroller
  The LPC2148 microcontroller is designed by Philips (NXP Semiconductor) with several in-built features & peripherals. Due to these reasons, it will make more reliable as well as the efficient option for an application developer. LPC2148 is a 16-bit or 32-bit microcontroller based on ARM7 family.
 ### Features of LPC2148
 The main features of LPC2148 include the following.
+
 •	The LPC2148 is a 16 bit or 32 bit ARM7 family based microcontroller and available in a small LQFP64 package.
 •	ISP (in system programming) or IAP (in application programming) using on-chip boot loader software.
 •	On-chip static RAM is 8 kB-40 kB, on-chip flash memory is 32 kB-512 kB, the wide interface is 128 bit, or accelerator allows 60 MHz high-speed operation.
